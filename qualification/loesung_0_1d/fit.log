@@ -1,0 +1,144 @@
+
+
+*******************************************************************************
+Wed Feb 10 16:28:57 2021
+
+
+FIT:    data read from 'rawk.dat'
+        format = z
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a + b * sqrt(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.6855055132e+05   0.00e+00  1.58e+01    1.000000e+00   1.000000e+00
+   4 8.6072410869e-01  -1.49e-04  1.58e-03    7.672516e-04   4.619982e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.860724
+rel. change during last iteration : -1.49274e-09
+
+degrees of freedom    (FIT_NDF)                        : 998
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0293675
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000862449
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.000767252      +/- 0.002791     (363.8%)
+b               = 0.461998         +/- 0.0001248    (0.02701%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.943  1.000 
+
+
+*******************************************************************************
+Wed Feb 10 16:30:15 2021
+
+
+FIT:    data read from 'rawk.dat'
+        format = z
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a + b * sqrt(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.6851424048e+05   0.00e+00  1.58e+01    1.000000e+00   1.000000e+00
+   4 4.5126683514e-01  -2.56e-04  1.58e-03    5.193101e-02   4.598843e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.451267
+rel. change during last iteration : -2.55614e-09
+
+degrees of freedom    (FIT_NDF)                        : 998
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0212643
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000452171
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.051931         +/- 0.002021     (3.892%)
+b               = 0.459884         +/- 9.035e-05    (0.01965%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.943  1.000 
+
+
+*******************************************************************************
+Wed Feb 10 16:30:48 2021
+
+
+FIT:    data read from 'rawk.dat'
+        format = z
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a + b * sqrt(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.6961677710e+05   0.00e+00  1.58e+01    1.000000e+00   1.000000e+00
+   4 4.6661709337e-01  -2.36e-04  1.58e-03    7.330056e-02   4.570803e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.466617
+rel. change during last iteration : -2.35858e-09
+
+degrees of freedom    (FIT_NDF)                        : 998
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.021623
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000467552
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.0733006        +/- 0.002055     (2.804%)
+b               = 0.45708          +/- 9.187e-05    (0.0201%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.943  1.000 
+
+
+*******************************************************************************
+Wed Feb 10 16:32:12 2021
+
+
+FIT:    data read from 'rawk.dat'
+        format = z
+        #datapoints = 1000
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a + b * sqrt(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.6871067196e+05   0.00e+00  1.58e+01    1.000000e+00   1.000000e+00
+   4 6.0003103935e-01  -1.92e-04  1.58e-03    5.182565e-02   4.595509e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.600031
+rel. change during last iteration : -1.92279e-09
+
+degrees of freedom    (FIT_NDF)                        : 998
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0245201
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.000601234
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.0518257        +/- 0.002331     (4.497%)
+b               = 0.459551         +/- 0.0001042    (0.02267%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.943  1.000 
