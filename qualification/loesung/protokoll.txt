@@ -1,0 +1,7 @@
+22.4.2020 4. übung Gr:01 STudenten: X & Y
+Aufgabe Programmname Zeitaufwand (zusätzliche dateien) Unterordner 
+Aufgabe 1 Drunk.f95 4h (plot_fit.pdf, Mittelwert.txt) RW
+Aufgabe 2 linreg1.f95 2h (linreg.dat) LinReg
+Aufgabe 3 interpol.f95 3h (Poly) Interpolation
+
+
