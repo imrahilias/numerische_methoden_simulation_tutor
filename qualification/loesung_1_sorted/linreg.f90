@@ -19,8 +19,8 @@ program linreg
      print*, a(n,:)
   end do
 
-  ! sort ascending
-  call leiter( a )
+  ! shuffle ascending x
+  call shuffle( a )
 
   print*, ( a(k,:), new_line('a'), k = 1,n )
 
@@ -33,7 +33,7 @@ program linreg
      xy(k)= x(k)*y(k)
   end do
 
-  do k = 0, n
+  do k = 1, n
      sumx  = sumx  + x(k)
      sumy  = sumy  + y(k)
      sumxq = sumxq + xq(k)
@@ -57,7 +57,7 @@ program linreg
 contains
 
   
-  subroutine leiter( a )
+  subroutine shuffle( a )
 
     implicit none
     real(kind=p), dimension(nmax,3) :: a
@@ -69,7 +69,7 @@ contains
        a( irow, : ) = a( krow, : )
        a( krow, : ) = dummy( 1,: )
     end do
-  end subroutine leiter
+  end subroutine shuffle
 
 
 end program

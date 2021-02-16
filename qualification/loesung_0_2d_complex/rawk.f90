@@ -16,7 +16,7 @@ program rawk
 
      do s = 2, nsteps
         call random_number( r )
-        e = e + exp( twopi * r ) ! delta = (-1,1)
+        e = e + r * exp( twopi ) ! delta = (-1,1)
         entf( s ) = entf( s ) + sqrt( abs( e ) )
      end do
   end do

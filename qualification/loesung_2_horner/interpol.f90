@@ -3,7 +3,7 @@
 program interpol
 
   implicit none
-  integer, parameter :: p=selected_real_kind(16), d = 10, n = 1e6
+  integer, parameter :: p=selected_real_kind(16), d = 10, n = 1e3
   integer :: i, j, k
   real(kind=p) :: xc, mix, dx, horn
   real(kind=p), dimension(d,d) :: y = 0

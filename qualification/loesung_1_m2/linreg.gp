@@ -9,5 +9,8 @@ set title
 #set xrange [-10:10]
 set xlabel 'x'
 set ylabel 'y'
+f(x) = a * x + b
+fit f(x) 'lin-reg.txt' via a,b
 p 'lin-reg.txt' u 1:2 w p pt 7 lc 0 ps 2 t 'data', \
-'linreg.dat' u 1:2 w l t 'linreg'
+'linreg.dat' u 1:2 w l t 'linreg', \
+f(x) t 'fit'

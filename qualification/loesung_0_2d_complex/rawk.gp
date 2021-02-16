@@ -9,4 +9,5 @@ set xlabel 'steps'
 set ylabel 'distance'
 f(x) = a + b * sqrt(x)
 fit f(x) 'rawk.dat' via a,b
-p 'rawk.dat', f(x)
+p 'rawk.dat', \
+f(x)
