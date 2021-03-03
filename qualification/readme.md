@@ -13,7 +13,7 @@ real(kind=p) :: x
 # filenames
 
 es ist üblich alle fortran source files mit der endung ".f90" zu
-verehen, auch wenn sie mit einem späteren standard geschrieben sind
+versehen, auch wenn sie mit einem späteren standard geschrieben sind
 (zb 2008). die wesentliche unterscheidung ist hier zwischen fortran77
 und fortran90.
 
@@ -25,6 +25,7 @@ auszuführen und schließlich zu plotten, kann auch alles is ein shell
 skript "linreg.sh" zusammengefasst werden:
 
 "
+#!/bin/sh
 time gfortran -o linreg linreg.f90 &&
 time ./linreg &&
 time gnuplot linreg.gp
