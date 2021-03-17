@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 
 \title{Coding Beautifully}
+%\author{ }
 \date{March 2021}
 \author{Jan Tomczak\\Moritz Siegel}
 \begin{document}
@@ -26,8 +27,8 @@ To compile your program for debugging purposes, use\\
 \noindent
 with the following FLAGS\\
 
-\verb|-0g|\\   
-"optimize debugging experience" \\
+\verb|-Og|\\   
+"optimize debugging experience (O for optimise)" \\
 
 \verb|-Wall|\\  
 "This enables all the warnings about constructions that some users consider questionable, and that are easy to avoid"\\
@@ -131,12 +132,12 @@ more important - especially in Fortran - counters must be initialised \verb|n = 
 If needed, it is convenient to define $\pi$ the following way in the preamble:\\
 
 \noindent
-\verb|double precision, parameter :: pi = dacos(-1.d0)|\\
+\verb|double precision, parameter :: pi = acos(-1.d0)|\\
 
 or even better:\\
 
 \noindent
-\verb|real(kind=p), parameter :: pi = dacos(-1._p)|\\
+\verb|real(kind=p), parameter :: pi = acos(-1._p)|\\
 
 
 \subsection{Integer Overflow}
@@ -156,23 +157,56 @@ In Fortran, there is no built-in way of multiplying matrices (including vectors)
 
 Due to intrinsic hardware-level operations, the notation \verb|x**2| is usually faster than \verb|x*x|; with \verb|x**2.0| being the slowest (if the compiler doesn't realize 2.0 actually represents a sort of \emph{hidden} integer).
 
+\subsection{Correct rounding}
+Usually when converting from a real number to an integer you want to use \verb|nint(x)| instead of \verb|int(x)|. \verb|int| simply cuts off all decimal places, while \verb|nint| rounds to the nearest whole number. When using \verb|int|, small rounding errors can lead to unexpected behaviour. E.g.:
 
+\begin{verbatim}
+real :: pi = acos(-1.0)
+real :: x, y
+integer i
 
+x = 60*pi
+y = 5*pi
+i = int(x / y)    ! x is now 11 !!!
+i = x / y         ! same as int(x), x is now 11
+i = nint(x / y)   ! x is now 12
+\end{verbatim}
 
+\subsection{Integer Division}
 
+When dividing two integer variables the result is converted to an integer by removing all decimal places, even if the result of the calculation is assigned to a real variable!
 
+\begin{verbatim}
+integer :: i = 1, j = 2
+real :: x
 
+x = i / j
+! x is now 0.0
+\end{verbatim}
 
+In order to get floating point division, at least one of the variables has to be converted to real:
 
+\begin{verbatim}
+integer :: i = 1, j = 2
+real :: x
 
+x = real(i) / j
+! x is now 0.5
+\end{verbatim}
 
+\subsection{Loops with real variables}
 
+The most precise form to step through an interval with \verb|n| intervals is the following form:
 
+\begin{verbatim}
+real :: begin, end, x
+integer :: n, i
 
+do i = 0,n
+    x = begin + (i*(end-begin))/n
+end
+\end{verbatim}
 
-
-
-
-
+Avoid incrementing x inside the loop (\verb|x = x + dx|) because this way small rounding errors of dx can sum up.
 
 \end{document}
