@@ -64,7 +64,7 @@ u9      1
 36      3
 38      3
 39      1-2? many errors, wrong results.
-40      0? temperature loop missing, plots have to come from someone else!
+40      3 temperature loop was commented out, all clear.
 42      3
 43      1-2? slow, many errors, only 5x5.
 44      3
