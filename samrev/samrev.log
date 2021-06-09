@@ -1,0 +1,16 @@
+ weighting of posterior vs coupling (<1: less coupling, >1: more coupling:
+   1.0000000000000000      
+
+ system size:
+         254 x         333 :       84582 
+
+ typ, amount, prior:
+           1       30822  0.36440377385259276      
+           2       20128  0.23797025371828520      
+           3       20009  0.23656333498853183      
+           4        1847   2.1836797427348609E-002 
+           5       11776  0.13922584001324159      
+
+ coupling constant statistics:
+ mean of j:   1.2876552279437194     
+ var of j:  0.64617367533924486     
